@@ -40,3 +40,29 @@ console.log(typeof myobj)
 console.log(typeof heros)
 console.log(typeof id)
 
+// ** Stack Memory(Primitive) and Heap Memory(Non Primitive)**
+
+// when we use stack memory => we get the copy of that variable
+// when we use Heap memory => we get the reference of that variable
+
+let mycompanyname = "Paypal";
+
+let anothercompanyname = mycompanyname
+anothercompanyname = "Microsoft";
+
+console.log(mycompanyname)
+console.log(anothercompanyname)
+
+let userOne = {
+    email : "user@google.com",
+    upi: "user@upi",
+}
+
+let userTwo = userOne
+userTwo.email = "hello@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+

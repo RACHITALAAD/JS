@@ -76,3 +76,4 @@ function Array(getArray){
 console.log(Array(newArray));
 
 
+

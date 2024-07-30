@@ -29,7 +29,7 @@ function sumtwonum(num1,num2){
 const result = sumtwonum(8,5);
 // console.log(result);
 
-function loginusermessage(username){
+function loginusermessage(username = "hello"){ // passing default value
     if(username == undefined){ //if(!username) ""(empty string = > consider as false value ,undefined => consider as (false value)
         console.log("Please enter a user name");
         return;
@@ -39,6 +39,40 @@ function loginusermessage(username){
 }
 // console.log(loginusermessage("rachita")); // rachita
 // console.log(loginusermessage(""));  // just logged In
-console.log(loginusermessage());  // undefined just logged In
+// console.log(loginusermessage());  // undefined just logged In
+// console.log(loginusermessage("rachita"));
+
+
+// Shopping cart
+
+function calculateCartPrice(val1 , val2 , ...num1){  // ... => rest operator
+    return num1;
+}
+
+const price = calculateCartPrice(200 , 400 , 500 , 1000);   // val1 = 200 , val2 = 400
+// console.log(price); // returns the array 
+
+
+const user = { // object
+    username : "rachita",
+    prices : 199,
+}
+
+function handleobject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+
+// handleobject(user);
+handleobject({
+    username : "rachita",
+    price : 399
+})
+
+const newArray = [100,200,300,400] //passing the array into the function 
+
+function Array(getArray){
+    return getArray[1]
+}
+console.log(Array(newArray));
 
 
